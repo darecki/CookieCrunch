@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		326E089E198130BE00586605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E089D198130BE00586605 /* AppDelegate.swift */; };
-		326E08A0198130BE00586605 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 326E089F198130BE00586605 /* GameScene.sks */; };
 		326E08A2198130BE00586605 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08A1198130BE00586605 /* GameScene.swift */; };
 		326E08A4198130BE00586605 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08A3198130BE00586605 /* GameViewController.swift */; };
 		326E08A7198130BE00586605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326E08A5198130BE00586605 /* Main.storyboard */; };
 		326E08A9198130BE00586605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326E08A8198130BE00586605 /* Images.xcassets */; };
 		326E08B5198130BE00586605 /* CoockieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08B4198130BE00586605 /* CoockieCrunchTests.swift */; };
+		326E08BF1981311C00586605 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 326E08BE1981311C00586605 /* Sprites.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 		326E0898198130BE00586605 /* CoockieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoockieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E089C198130BE00586605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326E089D198130BE00586605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		326E089F198130BE00586605 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		326E08A1198130BE00586605 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		326E08A3198130BE00586605 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		326E08A6198130BE00586605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		326E08AE198130BE00586605 /* CoockieCrunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoockieCrunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E08B3198130BE00586605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326E08B4198130BE00586605 /* CoockieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoockieCrunchTests.swift; sourceTree = "<group>"; };
+		326E08BE1981311C00586605 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				326E089D198130BE00586605 /* AppDelegate.swift */,
-				326E089F198130BE00586605 /* GameScene.sks */,
 				326E08A1198130BE00586605 /* GameScene.swift */,
 				326E08A3198130BE00586605 /* GameViewController.swift */,
 				326E08A5198130BE00586605 /* Main.storyboard */,
 				326E08A8198130BE00586605 /* Images.xcassets */,
+				326E08BE1981311C00586605 /* Sprites.atlas */,
 				326E089B198130BE00586605 /* Supporting Files */,
 			);
 			path = CoockieCrunch;
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				326E08A9198130BE00586605 /* Images.xcassets in Resources */,
-				326E08A0198130BE00586605 /* GameScene.sks in Resources */,
+				326E08BF1981311C00586605 /* Sprites.atlas in Resources */,
 				326E08A7198130BE00586605 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
