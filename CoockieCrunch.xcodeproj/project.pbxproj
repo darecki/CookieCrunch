@@ -17,6 +17,7 @@
 		326E08C1198132A200586605 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08C0198132A200586605 /* Cookie.swift */; };
 		32BE455C198134930091C84E /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE455B198134930091C84E /* Array2D.swift */; };
 		32BE455E198138A50091C84E /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE455D198138A50091C84E /* Set.swift */; };
+		32BE4560198139490091C84E /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE455F198139490091C84E /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		326E08C0198132A200586605 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cookie.swift; path = ../Cookie.swift; sourceTree = "<group>"; };
 		32BE455B198134930091C84E /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		32BE455D198138A50091C84E /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		32BE455F198139490091C84E /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				326E08C0198132A200586605 /* Cookie.swift */,
 				32BE455B198134930091C84E /* Array2D.swift */,
 				32BE455D198138A50091C84E /* Set.swift */,
+				32BE455F198139490091C84E /* Level.swift */,
 				326E08A8198130BE00586605 /* Images.xcassets */,
 				326E08BE1981311C00586605 /* Sprites.atlas */,
 				326E089B198130BE00586605 /* Supporting Files */,
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				326E08A2198130BE00586605 /* GameScene.swift in Sources */,
+				32BE4560198139490091C84E /* Level.swift in Sources */,
 				326E08C1198132A200586605 /* Cookie.swift in Sources */,
 				32BE455E198138A50091C84E /* Set.swift in Sources */,
 				326E08A4198130BE00586605 /* GameViewController.swift in Sources */,
