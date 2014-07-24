@@ -88,13 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				326E089D198130BE00586605 /* AppDelegate.swift */,
-				326E08A1198130BE00586605 /* GameScene.swift */,
-				326E08A3198130BE00586605 /* GameViewController.swift */,
 				326E08A5198130BE00586605 /* Main.storyboard */,
-				326E08C0198132A200586605 /* Cookie.swift */,
-				32BE455B198134930091C84E /* Array2D.swift */,
-				32BE455D198138A50091C84E /* Set.swift */,
-				32BE455F198139490091C84E /* Level.swift */,
+				32BE456419813D480091C84E /* Controllers */,
+				32BE456119813D080091C84E /* Models */,
+				32BE456319813D2E0091C84E /* Views */,
+				32BE456219813D140091C84E /* Helpers */,
 				326E08A8198130BE00586605 /* Images.xcassets */,
 				326E08BE1981311C00586605 /* Sprites.atlas */,
 				326E089B198130BE00586605 /* Supporting Files */,
@@ -125,6 +123,40 @@
 				326E08B3198130BE00586605 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32BE456119813D080091C84E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				326E08C0198132A200586605 /* Cookie.swift */,
+				32BE455F198139490091C84E /* Level.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		32BE456219813D140091C84E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				32BE455B198134930091C84E /* Array2D.swift */,
+				32BE455D198138A50091C84E /* Set.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		32BE456319813D2E0091C84E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				326E08A1198130BE00586605 /* GameScene.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		32BE456419813D480091C84E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				326E08A3198130BE00586605 /* GameViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
