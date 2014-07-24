@@ -14,6 +14,9 @@
 		326E08A9198130BE00586605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326E08A8198130BE00586605 /* Images.xcassets */; };
 		326E08B5198130BE00586605 /* CoockieCrunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08B4198130BE00586605 /* CoockieCrunchTests.swift */; };
 		326E08BF1981311C00586605 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 326E08BE1981311C00586605 /* Sprites.atlas */; };
+		326E08C1198132A200586605 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08C0198132A200586605 /* Cookie.swift */; };
+		32BE455C198134930091C84E /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE455B198134930091C84E /* Array2D.swift */; };
+		32BE455E198138A50091C84E /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE455D198138A50091C84E /* Set.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		326E08B3198130BE00586605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326E08B4198130BE00586605 /* CoockieCrunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoockieCrunchTests.swift; sourceTree = "<group>"; };
 		326E08BE1981311C00586605 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		326E08C0198132A200586605 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cookie.swift; path = ../Cookie.swift; sourceTree = "<group>"; };
+		32BE455B198134930091C84E /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		32BE455D198138A50091C84E /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				326E08A1198130BE00586605 /* GameScene.swift */,
 				326E08A3198130BE00586605 /* GameViewController.swift */,
 				326E08A5198130BE00586605 /* Main.storyboard */,
+				326E08C0198132A200586605 /* Cookie.swift */,
+				32BE455B198134930091C84E /* Array2D.swift */,
+				32BE455D198138A50091C84E /* Set.swift */,
 				326E08A8198130BE00586605 /* Images.xcassets */,
 				326E08BE1981311C00586605 /* Sprites.atlas */,
 				326E089B198130BE00586605 /* Supporting Files */,
@@ -216,8 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				326E08A2198130BE00586605 /* GameScene.swift in Sources */,
+				326E08C1198132A200586605 /* Cookie.swift in Sources */,
+				32BE455E198138A50091C84E /* Set.swift in Sources */,
 				326E08A4198130BE00586605 /* GameViewController.swift in Sources */,
 				326E089E198130BE00586605 /* AppDelegate.swift in Sources */,
+				32BE455C198134930091C84E /* Array2D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +415,7 @@
 				326E08BA198130BE00586605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		326E08BB198130BE00586605 /* Build configuration list for PBXNativeTarget "CoockieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +424,7 @@
 				326E08BD198130BE00586605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
