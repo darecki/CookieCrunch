@@ -1,5 +1,6 @@
 import UIKit
 import SpriteKit
+import AVFoundation
 
 class GameViewController: UIViewController {
     var scene: GameScene!
@@ -16,6 +17,8 @@ class GameViewController: UIViewController {
     
     var tapGestureRecognizer: UITapGestureRecognizer!
     
+    var backgroundMusic: AVAudioPlayer!
+
     @IBAction func shuffleButtonPressed(AnyObject) {
         shuffle()
         decrementMoves()
@@ -53,6 +56,12 @@ class GameViewController: UIViewController {
         
         // Present the scene.
         skView.presentScene(scene)
+        
+        // Load and start background music.
+        let url = NSBundle.mainBundle().URLForResource("Mining by Moonlight", withExtension: "mp3")
+        backgroundMusic = AVAudioPlayer(contentsOfURL: url, error: nil)
+        backgroundMusic.numberOfLoops = -1
+        backgroundMusic.play()
         
         beginGame()
     }
