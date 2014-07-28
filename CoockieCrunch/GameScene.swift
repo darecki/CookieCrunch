@@ -30,6 +30,7 @@ class GameScene: SKScene {
         let background = SKSpriteNode(imageNamed: "Background")
         addChild(background)
         
+        gameLayer.hidden = true
         addChild(gameLayer)
         
         let layerPosition = CGPoint(
@@ -307,6 +308,20 @@ class GameScene: SKScene {
         scoreLabel.runAction(SKAction.sequence([moveAction, SKAction.removeFromParent()]))
     }
     
+    func animateGameOver(completion: () -> ()) {
+        let action = SKAction.moveBy(CGVector(dx: 0, dy: -size.height), duration: 0.3)
+        action.timingMode = .EaseIn
+        gameLayer.runAction(action, completion: completion)
+    }
+    
+    func animateBeginGame(completion: () -> ()) {
+        gameLayer.hidden = false
+        gameLayer.position = CGPoint(x: 0, y: size.height)
+        let action = SKAction.moveBy(CGVector(dx: 0, dy: -size.height), duration: 0.3)
+        action.timingMode = .EaseOut
+        gameLayer.runAction(action, completion: completion)
+    }
+    
     func showSelectionIndicatorForCookie(cookie: Cookie) {
         if selectionSprite.parent != nil {
             selectionSprite.removeFromParent()
@@ -328,5 +343,7 @@ class GameScene: SKScene {
             SKAction.removeFromParent()]))
     }
     
-    
+    func removeAllCookieSprites() {
+        cookiesLayer.removeAllChildren()
+    }
 }
