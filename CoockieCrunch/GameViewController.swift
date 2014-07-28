@@ -5,6 +5,13 @@ class GameViewController: UIViewController {
     var scene: GameScene!
     var level: Level!
     
+    var movesLeft: Int = 0
+    var score: Int = 0
+    
+    @IBOutlet var targetLabel: UILabel!
+    @IBOutlet var movesLabel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
@@ -40,6 +47,10 @@ class GameViewController: UIViewController {
     }
     
     func beginGame() {
+        movesLeft = level.maximumMoves
+        score = 0
+        updateLabels()
+        level.resetComboMultiplier()
         shuffle()
     }
     
@@ -68,6 +79,10 @@ class GameViewController: UIViewController {
             return
         }
         scene.animateMatchedCookies(chains) {
+            for chain in chains {
+                self.score += chain.score
+            }
+            self.updateLabels()
             let columns = self.level.fillHoles()
             self.scene.animateFallingCookies(columns) {
                 let columns = self.level.topUpCookies()
@@ -79,7 +94,14 @@ class GameViewController: UIViewController {
     }
     
     func beginNextTurn() {
+        level.resetComboMultiplier()
         level.detectPossibleSwaps()
         view.userInteractionEnabled = true
+    }
+    
+    func updateLabels() {
+        targetLabel.text = NSString(format: "%ld", level.targetScore)
+        movesLabel.text = NSString(format: "%ld", movesLeft)
+        scoreLabel.text = NSString(format: "%ld", score)
     }
 }

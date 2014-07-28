@@ -7,6 +7,10 @@ class Level {
     let cookies = Array2D<Cookie>(columns: NumColumns, rows: NumRows)  // private
     let tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)  // private
     var possibleSwaps = Set<Swap>() // private
+    var comboMultiplier: Int = 0  // private
+    
+    let targetScore: Int!
+    let maximumMoves: Int!
     
     init(filename: String) {
         // 1
@@ -24,6 +28,8 @@ class Level {
                         }
                     }
                 }
+                targetScore = (dictionary["targetScore"] as NSNumber).integerValue
+                maximumMoves = (dictionary["moves"] as NSNumber).integerValue
             }
         }
     }
@@ -229,6 +235,9 @@ class Level {
         removeCookies(horizontalChains)
         removeCookies(verticalChains)
         
+        calculateScores(horizontalChains)
+        calculateScores(verticalChains)
+        
         return horizontalChains.unionSet(verticalChains)
     }
     
@@ -299,5 +308,17 @@ class Level {
             }
         }
         return columns
+    }
+    
+    func calculateScores(chains: Set<Chain>) {
+        // 3-chain is 60 pts, 4-chain is 120, 5-chain is 180, and so on
+        for chain in chains {
+            chain.score = 60 * (chain.length - 2) * comboMultiplier
+            ++comboMultiplier
+        }
+    }
+    
+    func resetComboMultiplier() {
+        comboMultiplier = 1
     }
 }

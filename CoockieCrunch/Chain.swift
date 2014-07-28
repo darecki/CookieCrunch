@@ -1,5 +1,6 @@
 class Chain: Hashable, Printable {
     var cookies = [Cookie]()  // private
+    var score: Int = 0
     
     enum ChainType: Printable {
         case Horizontal
