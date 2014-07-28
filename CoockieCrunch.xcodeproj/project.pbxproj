@@ -14,6 +14,7 @@
 		3256832719864EC100EB3B3A /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3256832119864EC100EB3B3A /* Ka-Ching.wav */; };
 		3256832819864EC100EB3B3A /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3256832219864EC100EB3B3A /* Mining by Moonlight.mp3 */; };
 		3256832919864EC100EB3B3A /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3256832319864EC100EB3B3A /* Scrape.wav */; };
+		3256832B1986507900EB3B3A /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256832A1986507900EB3B3A /* Chain.swift */; };
 		326E089E198130BE00586605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E089D198130BE00586605 /* AppDelegate.swift */; };
 		326E08A2198130BE00586605 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08A1198130BE00586605 /* GameScene.swift */; };
 		326E08A4198130BE00586605 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E08A3198130BE00586605 /* GameViewController.swift */; };
@@ -52,6 +53,7 @@
 		3256832119864EC100EB3B3A /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
 		3256832219864EC100EB3B3A /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		3256832319864EC100EB3B3A /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		3256832A1986507900EB3B3A /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 		326E0898198130BE00586605 /* CoockieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoockieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326E089C198130BE00586605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		326E089D198130BE00586605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				32BE455F198139490091C84E /* Level.swift */,
 				32BE457019813FB80091C84E /* Tile.swift */,
 				3256831B1986384200EB3B3A /* Swap.swift */,
+				3256832A1986507900EB3B3A /* Chain.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				326E08A2198130BE00586605 /* GameScene.swift in Sources */,
 				32BE45731981405D0091C84E /* Extensions.swift in Sources */,
 				32BE4560198139490091C84E /* Level.swift in Sources */,
+				3256832B1986507900EB3B3A /* Chain.swift in Sources */,
 				326E08C1198132A200586605 /* Cookie.swift in Sources */,
 				3256831C1986384200EB3B3A /* Swap.swift in Sources */,
 				32BE457119813FB80091C84E /* Tile.swift in Sources */,
