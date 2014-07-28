@@ -64,6 +64,18 @@
                                 <rect key="frame" x="0.0" y="209" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wfN-cO-8XG">
+                                <rect key="frame" x="110" y="512" width="100" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                <state key="normal" title="Shuffle" backgroundImage="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleButtonPressed:" destination="LVB-YS-i5n" eventType="touchUpInside" id="xbM-xV-SEH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -71,6 +83,7 @@
                         <outlet property="gameOverPanel" destination="y7Q-Kg-Rc1" id="WMT-4V-Wq4"/>
                         <outlet property="movesLabel" destination="Gbm-jb-HMY" id="3ij-Y4-Wc9"/>
                         <outlet property="scoreLabel" destination="nWw-cu-rFo" id="3we-Kx-rIX"/>
+                        <outlet property="shuffleButton" destination="wfN-cO-8XG" id="Cz0-ir-3bR"/>
                         <outlet property="targetLabel" destination="WPx-Ol-Fvr" id="c4d-xj-EwW"/>
                     </connections>
                 </viewController>
@@ -79,6 +92,9 @@
             <point key="canvasLocation" x="74" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button" width="100" height="36"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
