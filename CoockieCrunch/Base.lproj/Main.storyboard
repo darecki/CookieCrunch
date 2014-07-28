@@ -60,10 +60,15 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="y7Q-Kg-Rc1">
+                                <rect key="frame" x="0.0" y="209" width="320" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="gameOverPanel" destination="y7Q-Kg-Rc1" id="WMT-4V-Wq4"/>
                         <outlet property="movesLabel" destination="Gbm-jb-HMY" id="3ij-Y4-Wc9"/>
                         <outlet property="scoreLabel" destination="nWw-cu-rFo" id="3we-Kx-rIX"/>
                         <outlet property="targetLabel" destination="WPx-Ol-Fvr" id="c4d-xj-EwW"/>
